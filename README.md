@@ -1,4 +1,6 @@
-## Hi there 👋
+
+
+(xiaojueshi's stars)[https://github-readme-stats.vercel.app/api?username=uyarn&show_icons=true&theme=radical&count_private=true&show_icons=true]
 
 <!--
 **xiaojueshi/xiaojueshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
