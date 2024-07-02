@@ -1,14 +1,14 @@
 name: generate animation
 
 on:
-  # run automatically every 24 hours
+  # 每天凌晨 0 点自动运行
   schedule:
     - cron: "0 0 * * *"
 
-  # allows to manually run the job at any time
+  # 允许手动触发工作流
   workflow_dispatch:
 
-  # run on every push on the master branch
+  # 在 main 分支上有 push 操作时触发
   push:
     branches:
       - main
@@ -19,17 +19,20 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      # 检出当前仓库的代码
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # 从 GitHub 用户的贡献图生成贪吃蛇游戏 SVG 动画，输出到指定路径
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v2
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: xiaojueshi
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      # 将 <build_dir> 的内容推送到目标分支
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
