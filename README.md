@@ -20,4 +20,4 @@ Here are some ideas to get you started:
 -->
 
 
-[![GitHub Roast 评分徽章](https://githubroast.dev/api/badge/xiaojueshi)](https://githubroast.dev/u/xiaojueshi)
+[![GitHub Roast](https://githubroast.dev/api/card/xiaojueshi)](https://githubroast.dev/u/xiaojueshi)
