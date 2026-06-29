@@ -18,3 +18,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+[![GitHub Roast 评分徽章](https://githubroast.dev/api/badge/xiaojueshi)](https://githubroast.dev/u/xiaojueshi)
