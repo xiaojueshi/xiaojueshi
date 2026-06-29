@@ -20,4 +20,3 @@ Here are some ideas to get you started:
 -->
 
 
-[![GitHub Roast](https://githubroast.dev/api/card/xiaojueshi)](https://githubroast.dev/u/xiaojueshi)
